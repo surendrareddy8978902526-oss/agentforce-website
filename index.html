@@ -11,6 +11,26 @@
     <h1>Welcome to My Agentforce Website</h1>
 
     <p>This is my first Agentforce external website.</p>
+    <script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00DgK000002WOHN',
+				'AgentforceserviceAgent99',
+				'https://orgfarm-9fed3791b3-dev-ed.develop.my.site.com/ESWAgentforceserviceAgent1787326557411',
+				{
+					scrt2URL: 'https://orgfarm-9fed3791b3-dev-ed.develop.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://orgfarm-9fed3791b3-dev-ed.develop.my.site.com/ESWAgentforceserviceAgent1787326557411/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
 
 </body>
 </html>
